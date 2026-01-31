@@ -1,0 +1,1000 @@
+<!-- TEST -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WONDAVEE - Portfolio</title>
+
+  <!-- Fonts: Inter & Montserrat (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* TEXTE PAGE ACCUEIL — POLICE ÉDITORIALE SANS-SERIF */
+
+
+
+    /* EFFET KEN BURNS AUTOMATIQUE SECTION 3 PHOTOS (TABLEAUX) — RESPIRATION CONTINUE */
+    .kb-auto-container {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: block;
+    }
+
+    .kb-auto-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      animation: section-kb-auto 12s ease-in-out infinite alternate;
+      display: block;
+    }
+
+    @keyframes section-kb-auto {
+      0% {
+        transform: scale(1.0) translate(0, 0);
+      }
+
+      100% {
+        transform: scale(1.06) translate(-1%, -1%);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="main-header">
+    <div class="brand-logo">
+      <a href="#" onclick="route('home')">
+        <span class="logo-main">WONDAVEE</span>
+        <span class="logo-tagline" data-lk="nav_tagline">ART CONTEMPORAIN</span>
+      </a>
+    </div>
+
+    <nav class="main-nav" id="nav-menu">
+      <ul>
+        <li><a href="#" class="nav-link active" onclick="route('home')" data-lk="nav_home">Accueil</a></li>
+        <li><a href="#" class="nav-link" onclick="route('tableaux')" data-lk="nav_works">Tableaux</a></li>
+        <li><a href="#" class="nav-link" onclick="route('vinyles')" data-lk="nav_vinyles">Vinyles</a></li>
+        <li><a href="#" class="nav-link" onclick="route('artiste')" data-lk="nav_artist">L’artiste</a></li>
+        <li><a href="#" class="nav-link" onclick="route('shop')" data-lk="nav_shop">Shop</a></li>
+        <li><a href="#" class="nav-link" onclick="route('contact')" data-lk="nav_contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch language">
+        <span class="lang-flag" aria-hidden="true">🇬🇧</span>
+      </button>
+    </div>
+    <div class="mobile-toggle" id="mobile-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- === PAGE: ACCUEIL === -->
+  <main id="page-home" class="page-view active">
+    <!-- Hero -->
+    <!-- Hero -->
+    <video preload="none" loop playsinline class="hero-bg" poster="images/accueil-atelier-wondavee.jpg">
+      <source src="videos/hero-video.mp4" type="video/mp4">
+    </video>
+
+    <div class="container hero-content">
+      <h1 data-fr="L’émotion en mouvement" data-en="Emotion in Motion">L'émotion en mouvement</h1>
+      <p data-fr="Peinture fluide & Art abstrait par Wondavee" data-en="Fluid Painting & Abstract Art by Wondavee">
+        Peinture fluide & Art abstrait par Wondavee</p>
+      <div class="hero-buttons">
+        <button class="btn-outline" onclick="route('series')" data-lk="btn_discover">Découvrir les œuvres</button>
+        <button class="btn-outline" onclick="route('artiste')" data-lk="btn_about">À propos</button>
+        <button id="hero-play-btn" class="hero-play-toggle" type="button" aria-label="Activer l'expérience">
+          <span class="play-icon-wrap" id="play-icon-main">
+            <!-- SVG PLAY Initial -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <img src="images/2.png" alt="Logo Wondavee" class="hero-logo">
+
+    <div class="scroll-indicator">↓</div>
+    </section>
+
+    <!-- Section Info Artiste -->
+    <section id="home-intro" class="split-section reverse reveal home-editorial" style="background: #000;">
+      <div class="split-col text home-editorial-left">
+        <h2 data-lk="home_artist_title" class="home-block-title">WONDAVEE</h2>
+        <div style="max-width: 48ch;margin-bottom: 20px;">
+          <p data-lk="home_artist_text_1" style="margin: 0 0 20px 0 !important;line-height: 1.8 !important;">
+            Artiste contemporaine, Wondavee développe une pratique centrée sur la transformation de la matière et des
+            jeux de couleurs.</p>
+          <p data-lk="home_artist_text_2"
+            style="margin: 0 !important;line-height: 1.8 !important;font-style: italic;opacity: 0.9;">
+            « Mes oeuvres ne laissent pas indifférents. L’enfant intérieur impulse, l’âme expérimentée ajuste. »</p>
+        </div>
+        <button class="btn-outline" onclick="route('artiste')" style="margin-top: 10px !important;"
+          data-lk="btn_read_more">LIRE PLUS</button>
+      </div>
+      <div class="split-col media">
+        <img src="images/accueil-atelier-wondavee.jpg" alt="Portrait Wondavee">
+      </div>
+
+    </section>
+
+
+    <!-- Section Info Vinyles -->
+    <section class="split-section reverse reveal home-editorial" style="background: #000;">
+      <div class="split-col media">
+        <img src="images/mock-ride-ws.jpg" alt="Vinyles Wondavee - Ride One">
+      </div>
+
+
+      <div class="split-col text home-editorial-left">
+        <h2 data-lk="home_vinyls_title" class="home-block-title">VINYLES</h2>
+        <div style="max-width: 45ch;margin-bottom: 10px;">
+          <p data-lk="home_vinyls_text_1" style="margin: 0 0 12px 0 !important;line-height: 1.55 !important;">Sur un
+            Vinyle, support non recyclable, la transformation devient un acte évident. Les Wondavee-Nyls sont finalisés
+            en rotation, résultats d’un rythme et de sa répétition à la manière d’un beat.</p>
+          <p data-lk="home_vinyls_text_2" style="margin: 0 0 10px 0 !important;line-height: 1.55 !important;">La
+            collection 2025 se compose de 150 vinyles uniques, répartis en différentes séries et tailles, où chaque
+            pièce affirme sa singularité.</p>
+        </div>
+        <button class="btn-outline" onclick="route('vinyles')" style="margin-top: 10px !important;"
+          data-lk="btn_see_vinyls">Voir
+          Vinyles</button>
+      </div>
+    </section>
+
+    <!-- Section Info Tableaux -->
+    <section class="split-section reveal home-editorial" style="background: #000;color: #fff;">
+      <div class="split-col media">
+        <img loading="lazy" src="images/accueil-tableaux-seraphic-paris.jpg" alt="Tableaux Wondavee - Seraphic Paris">
+      </div>
+
+      <div class="split-col text">
+        <h2 data-lk="home_paintings_title" class="home-block-title">TABLEAUX</h2>
+        <p data-lk="home_paintings_text_1">Chaque tableau se construit par coulées,
+          techniques, mélanges et ajustements successifs. Les densités sont pensées en amont afin de permettre aux
+          couleurs de réagir, de se superposer et de se sublimer ensemble laissant le mouvement, les couches et les
+          réactions guider chaque œuvre.</p>
+        <p data-lk="home_paintings_text_2" style="margin-top: 1rem;">Textures, rythmes et variations
+          de surface compose des pièces uniques, issues d’un travail à la fois intuitif et maîtrisé.</p>
+        <button class="btn-outline" onclick="route('tableaux')" style="margin-top: 2rem;"
+          data-lk="btn_see_paintings">Voir Tableaux</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- === PAGE: TABLEAUX === -->
+  <main id="page-tableaux" class="page-view"
+    style="display:none;padding-top: 140px;padding-bottom: 0;background: #000;">
+
+    <!-- 1. Hero (Rouge et Noir) -->
+    <section style="position: relative;height: 60vh;max-height: 750px;width: 100%;overflow: hidden;background: #000;">
+      <img loading="lazy" src="images/tableaux-hero-rouge-noir.jpg" alt="Le Rouge et le Noir"
+        style="width:100%;height:100%;object-fit:cover;object-position: center;display:block;">
+    </section>
+
+
+
+    <!-- 3. DUAL SHOWCASE TABLEAUX (2 Columns) -->
+    <section class="reveal" style="background: #000;padding: 0;margin: 0;">
+      <div class="container grid-dual-vinyles">
+        <div class="kb-slideshow" style="aspect-ratio: 1/1;">
+          <div class="kb-slide" style="background-image: url('images/shibui-3-10.jpeg');"></div>
+          <div class="kb-slide" style="background-image: url('images/seraphic-3-11.jpeg');"></div>
+        </div>
+        <div class="kb-slideshow" style="aspect-ratio: 1/1;">
+          <div class="kb-slide" style="background-image: url('images/tableaux-diapo-forelsket.jpg');"></div>
+          <div class="kb-slide" style="background-image: url('images/tableaux-diapo-seraphic.jpg');"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. BANDE ÉDITORIALE (Communication) -->
+    <section class="reveal" style="padding: 4rem 2rem;background: #000;color: #fff;">
+      <div style="max-width: 75ch;margin: 0 auto;line-height: 1.8;">
+        <p data-lk="tableaux_central_1" style="opacity: 0.9;margin: 0;">Un tableau amène une
+          dimension supplémentaire a une pièce. Une dimension choisie à un moment donné, qui fait du bien à l’univers
+          que l’on traverse alors. Il installe une atmosphère, il fait circuler une énergie différente. Rien n’est figé,
+          tout est cyclique. Certaines toiles apaisent, d’autres remuent, parfois profondément.</p>
+      </div>
+    </section>
+
+
+    <!-- 5. Bande Large (Rasasvada - Defused) -->
+    <section class="reveal"
+      style="position: relative;height: 60vh;max-height: 650px;width: 100%;overflow: hidden;background: #000;padding: 0;margin: 0;">
+      <img loading="lazy" src="images/rasasvada-tableaux.jpeg" alt="Rasasvada"
+        style="width:100%;height:100%;object-fit:cover;display:block;">
+    </section>
+
+
+
+    <!-- 9. 3 Photos de Grille (Terracotta, etc) - Defused with spacing -->
+    <section id="section-3d" class="reveal" style="background: #000;padding: 8rem 0 4rem 0;margin: 0;">
+      <div class="container grid-3" style="gap: 2rem;">
+
+
+        <div class="kb-auto-container">
+          <img loading="lazy" src="images/terracota1.jpg" alt="Tableau Terracotta" class="kb-auto-img"
+            style="object-position: center bottom;aspect-ratio:1/1;">
+        </div>
+        <div class="kb-auto-container">
+          <img loading="lazy" src="images/tableau_centre_3photos.jpg" alt="Tableau Wondavee P2" class="kb-auto-img"
+            style="aspect-ratio:1/1;">
+        </div>
+        <div class="kb-auto-container">
+          <img loading="lazy" src="images/tableau_noor.jpg" alt="Tableau Noor" class="kb-auto-img"
+            style="aspect-ratio:1/1;">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 11. Zone Éditoriale (Émotions) -->
+    <section class="reveal" style="padding: 4rem 2rem;background: #000;color: #fff;">
+      <div style="max-width: 65ch;margin: 0 auto;line-height: 1.8;">
+        <p data-lk="tableaux_large_1" style="opacity: 0.9;">Même s’il ne
+          s’exprime pas, le tableau communique. Il te parle, littéralement, il transmet des émotions. Pour Wondavee,
+          c’est un puzzle intrigant et évident en même temps, à travers ses toiles, elle diffuse des énergies
+          bienfaisantes, des énergies d'amour.</p>
+      </div>
+    </section>
+
+
+    <!-- 13. Bande Large (Wide Art) -->
+    <section class="reveal"
+      style="position: relative;height: 65vh;max-height: 680px;width: 100%;overflow: hidden;background: #000;margin: 0;padding: 0;">
+      <img loading="lazy" src="images/atelier-process-red.jpg" alt="Processus de création Wondavee"
+        style="width:100%;height:100%;object-fit:cover;object-position: center 85%;display:block;">
+    </section>
+
+    <!-- 14. BLOC TECHNIQUE FINAL (Placé au-dessus du diaporama) -->
+    <section class="reveal" style="padding: 4rem 2rem;background: #000;color: #fff;">
+      <div style="max-width: 70ch;margin: 0 auto;line-height: 1.8;">
+        <p data-lk="tableaux_large_2" style="opacity: 0.9;">Ses tableaux sont réalisés en acrylique,
+          à partir de techniques de fluid art. Après avoir déposé ses couches minutieusement préparées, elle mène sa
+          danse des mouvements et des rythmes qui façonnent l'identité propre à chacune de ses pièces. Le processus
+          alterne entre interventions, analyses et ajustements.</p>
+      </div>
+    </section>
+
+    <!-- 15. Photo Centrale Dominante (Diaporama) -->
+    <section class="container" style="padding: 0 0 8rem 0;background: #000;color: #fff;">
+      <div class="kb-slideshow-4" style="aspect-ratio: 1.5 / 1;width: 100%;max-width: 850px;margin: 0 auto;">
+        <div class="kb-slide" style="background-image: url('images/yatta1ws12-1-26.jpg');"></div>
+        <div class="kb-slide" style="background-image: url('images/yatta2ws12-1-26.jpg');"></div>
+        <div class="kb-slide" style="background-image: url('images/yatta3ws12-1-26.jpg');"></div>
+        <div class="kb-slide"
+          style="background-image: url('images/yatta4ws12-1-26.jpg'); background-position: center 20%;"></div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- === PAGE: SERIES === -->
+  <main id="page-series" class="page-view" style="display:none;padding-top: 140px;padding-bottom: 0;">
+    <!-- Haut de page SERIES (Transféré) -->
+    <section class="container" style="padding-bottom: 40px;">
+      <h2 style="text-align:center;margin-bottom:3rem;letter-spacing:2px;text-transform:uppercase;"
+        data-lk="series_title">SÉRIES</h2>
+
+      <!-- Grille de Séries Tableaux (Categoriés) -->
+      <!-- Grille de Séries Mixte (3 Columns) -->
+      <!-- Grille Tableaux (2 Columns Top) -->
+      <div class="tiles-grid"
+        style="grid-template-columns: repeat(2, 1fr); max-width: 800px; margin: 0 auto 3rem auto;">
+        <div class="tile-card" onclick="route('shop', 'Tableaux')">
+          <img loading="lazy" src="images/series-tableaux-sungaze.jpg" class="tile-img"
+            style="object-fit:cover;object-position:center;">
+          <div class="tile-content">
+            <div class="tile-title">TABLEAUX</div>
+          </div>
+        </div>
+
+        <div class="tile-card" onclick="route('shop', 'Tableaux 3D')">
+          <img loading="lazy" src="images/series-tableaux-3d-rasasvada.jpg" class="tile-img"
+            style="object-fit:cover;object-position:center;">
+          <div class="tile-content">
+            <div class="tile-title">TABLEAUX 3D</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grille Vinyles (3 Columns Below) -->
+      <div class="tiles-grid" style="margin: 0 auto 6rem auto;">
+        <div class="tile-card" onclick="route('shop', '808')">
+          <img loading="lazy" src="images/galerie-808-33t-1.jpg" class="tile-img" loading="lazy">
+          <div class="tile-content">
+            <div class="tile-title">808</div>
+          </div>
+        </div>
+
+        <div class="tile-card" onclick="route('shop', 'Soul')">
+          <img loading="lazy" src="images/galerie-soul-33t-3.jpg" class="tile-img" loading="lazy">
+          <div class="tile-content">
+            <div class="tile-title">SOUL</div>
+          </div>
+        </div>
+
+        <div class="tile-card" onclick="route('shop', 'Blood')">
+          <img loading="lazy" src="images/galerie-blood-33t-1.jpg" class="tile-img" loading="lazy">
+          <div class="tile-content">
+            <div class="tile-title">BLOOD</div>
+          </div>
+        </div>
+
+        <div class="tile-card" onclick="route('shop', 'Arctic')">
+          <img loading="lazy" src="images/galerie-arctic-33t-12.jpg" class="tile-img" loading="lazy">
+          <div class="tile-content">
+            <div class="tile-title">ARCTIC</div>
+          </div>
+        </div>
+
+        <div class="tile-card" onclick="route('shop', 'Sayan')">
+          <img loading="lazy" src="images/galerie-sayan-33t-2.jpg" class="tile-img" loading="lazy">
+          <div class="tile-content">
+            <div class="tile-title">SAYAN</div>
+          </div>
+        </div>
+
+        <div class="tile-card" onclick="route('shop', 'Disco')">
+          <img loading="lazy" src="images/galerie-disco-33t-1.jpg" class="tile-img" loading="lazy">
+          <div class="tile-content">
+            <div class="tile-title">DISCO</div>
+          </div>
+        </div>
+
+        <div class="tile-card" onclick="route('shop', 'Dream')">
+          <img loading="lazy" src="images/galerie-dream-33t-2.jpg" class="tile-img" loading="lazy">
+          <div class="tile-content">
+            <div class="tile-title">DREAM</div>
+          </div>
+        </div>
+
+        <div class="tile-card" onclick="route('shop', 'F.Touch')">
+          <img loading="lazy" src="images/galerie-f-touch-33t-6.jpg" class="tile-img" loading="lazy">
+          <div class="tile-content">
+            <div class="tile-title">F.TOUCH</div>
+          </div>
+        </div>
+
+        <div class="tile-card" onclick="route('shop', 'Earth')">
+          <img loading="lazy" src="images/galerie-earth-33t-2.jpg" class="tile-img" loading="lazy">
+          <div class="tile-content">
+            <div class="tile-title">EARTH</div>
+          </div>
+        </div>
+
+        <div class="tile-card" onclick="route('shop', 'Fusion')">
+          <img loading="lazy" src="images/galerie-fusion-33t-11.jpg" class="tile-img" loading="lazy">
+          <div class="tile-content">
+            <div class="tile-title">FUSION</div>
+          </div>
+        </div>
+
+        <div class="tile-card" onclick="route('shop', 'Pop')">
+          <img loading="lazy" src="images/galerie-pop-33t-5.jpg" class="tile-img" loading="lazy">
+          <div class="tile-content">
+            <div class="tile-title">POP</div>
+          </div>
+        </div>
+
+        <div class="tile-card" onclick="route('shop', 'Ride')">
+          <img loading="lazy" src="images/galerie-ride-33t-2.jpg" class="tile-img" loading="lazy">
+          <div class="tile-content">
+            <div class="tile-title">RIDE</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grille Rock & Wave (Match 3-col dimensions exactly) -->
+      <div class="grid-centered-items" style="margin-bottom: 6rem;">
+        <div class="tile-card" onclick="route('shop', 'Rock')">
+          <img loading="lazy" src="images/galerie-rock-33t-2.jpg" class="tile-img" loading="lazy">
+          <div class="tile-content">
+            <div class="tile-title">ROCK</div>
+          </div>
+        </div>
+
+        <div class="tile-card" onclick="route('shop', 'Wave')">
+          <img loading="lazy" src="images/galerie-wave-33t-11.jpg" class="tile-img" loading="lazy">
+          <div class="tile-content">
+            <div class="tile-title">WAVE</div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <main id="page-vinyles" class="page-view vinyl-page" style="display:none;padding-top: 0;padding-bottom: 0;">
+
+    <!-- 1. HERO VINYLES -->
+    <section
+      style="position: relative;height: 65vh;max-height: 700px;width: 100%;overflow: hidden;display: flex;align-items: center;justify-content: center;background: #000;">
+      <img loading="lazy" src="images/hero-vinyles-new.jpg" alt="Collection Vinyles Wondavee"
+        style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;object-fit: cover;object-position: center 80%;opacity: 1;">
+    </section>
+
+
+    <!-- 2. SECTION ÉDITORIALE INTRO (Recentrage parfait) -->
+    <section
+      style="min-height: 40vh;display: flex;align-items: center;justify-content: center;background: #000;padding: 2rem;">
+      <div class="container" style="max-width: 800px;line-height: 2.0;">
+        <p data-lk="vinyls_central_1" style="color: #F2F2F2;margin: 0;font-style: italic;opacity: 0.9;">
+          À partir d’un support non recyclable, la transformation devient un acte de création. Le vinyle quitte son
+          usage initial pour devenir un objet plastique — une surface, un cercle, un mouvement. Le travail s’organise
+          autour du rythme, de la rotation et des réactions de la matière.
+        </p>
+      </div>
+    </section>
+
+    <!-- 3. GRILLE DE PHOTOS -->
+    <section class="container" style="padding: 2rem 0 6rem;">
+
+      <div class="grid-3" style="gap: 2.5rem;">
+        <div style="overflow: hidden;aspect-ratio: 1/1;background: #000;">
+          <img loading="lazy" src="images/vinyl-blue-new.jpg" alt="Vinyle Wondavee Blue" class="vinyl-hover-subtle"
+            style="width: 100%;height: 100%;object-fit: cover;display: block;">
+        </div>
+        <div class="kb-slideshow" style="aspect-ratio: 1/1; background: #000;">
+          <div class="kb-slide"
+            style="background-image: url('images/vinyl-gold-new.jpg'); opacity: 1; animation-delay: 0s;"></div>
+          <div class="kb-slide" style="background-image: url('images/vinyl-gold-process.jpg'); animation-delay: 6s;">
+          </div>
+        </div>
+        <div style="overflow: hidden;aspect-ratio: 1/1;background: #000;">
+          <img loading="lazy" src="images/vinyl-pink-new.jpg" alt="Vinyle Wondavee Pink" class="vinyl-hover-subtle"
+            style="width: 100%;height: 100%;object-fit: cover;display: block;">
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 4. ZONE ÉDITORIALE LARGE (Bio - Monolithic Black) -->
+    <section style="padding: 4rem 2rem;text-align: center;background: #000;color: #fff;">
+      <div class="container" style="max-width: 80ch;margin: 0 auto;line-height: 1.8;">
+        <p data-lk="vinyls_large_1" style="white-space: pre-line;">Entourée très tôt de personnes
+          créatives, Wondavee développe un lien naturel avec la musique...</p>
+      </div>
+    </section>
+
+
+    <!-- 5. DUAL SHOWCASE (Harmonie & Juste Milieu) -->
+    <section style="padding: 4rem 0 0;background: #000;">
+      <div class="container grid-dual-vinyles" style="max-width: 740px;">
+
+
+        <div style="display: flex; flex-direction: column; width: 100%;">
+          <div class="kb-slideshow" style="aspect-ratio: 1/1; background: #000; width: 100%;">
+            <div class="kb-slide"
+              style="background-image: url('images/vinylmock9.jpg'); opacity: 1; animation-delay: 0s;"></div>
+            <div class="kb-slide" style="background-image: url('images/vinylmock8.jpg'); animation-delay: 6s;"></div>
+          </div>
+        </div>
+        <div style="display: flex;flex-direction: column;">
+          <div style="aspect-ratio: 1/1;background: #000;width: 100%;overflow: hidden;">
+            <img loading="lazy" src="images/vinyl-red-new.jpg" alt="Vinyle Wondavee Red"
+              style="width: 100%;height: 100%;object-fit: cover;display: block;">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 5b. TEXTE DE FIN (Recentrage parfait) -->
+    <!-- 5b. TEXTE DE FIN (Centrage Mathématique & Unifié) -->
+    <section style="padding: 8rem 2rem;background: #000;color: #fff;line-height: 1.8;">
+      <div style="max-width: 800px;margin: 0 auto;">
+        <p data-lk="vinyls_large_2" style="margin-bottom: 2rem;opacity: 0.9;">En tombant par hasard
+          sur un stock de vinyles...</p>
+        <p data-lk="vinyls_central_2" style="opacity: 0.8;">150 vinyles uniques constituent la
+          collection 2025...</p>
+      </div>
+    </section>
+
+
+
+
+    <div style="width: 100%;height: 60vh;background: #000;position: relative;overflow: hidden;">
+      <video id="vinyl-video" src="videos/vidSWvinyl2.mp4" preload="none" loop playsinline
+        style="width:100%;height:100%;object-fit:cover;display:block;" poster="images/hero-vinyles-new.jpg"></video>
+      <button id="vinyl-video-btn" class="btn-gallery-minimal" type="button" aria-label="Play/Pause Video"
+        style="position: absolute; bottom: 40px; right: 40px; z-index: 10;">
+        <span class="play-icon-wrap" id="vinyl-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+        </span>
+      </button>
+    </div>
+
+
+
+
+
+  </main>
+
+  <!-- === PAGE: ARTISTE === -->
+  <main id="page-artiste" class="page-view" style="display:none;background: #000 !important;">
+    <!-- 1. Hero Band (Constraint B) - Cinematic Headshot View -->
+    <div class="artist-hero-band">
+      <img loading="lazy" src="images/hero-artiste-1.jpg" alt="Artist Banner">
+    </div>
+
+
+    <!-- 2. Profile Card - Premium Overlap -->
+    <div class="artist-profile-card">
+      <img loading="lazy" src="images/artiste-blockflottant-1.png" alt="Wondavee Portrait">
+    </div>
+
+
+
+    <!-- 3. Zone Éditoriale 1 (Intro) - Bloc Noir (Constraint D1) -->
+    <section class="artist-editorial-section artist-section-dark">
+      <div class="editorial-col">
+        <p data-lk="artist_intro_text" class="artist-body italic artist-editorial-text-intro">
+          Artiste contemporaine, Wondavee développe une pratique de l’art fluide. Elle aborde la peinture comme une
+          matière vivante, laissant le mouvement, les couches et les réactions guider chaque œuvre.
+          <br><br>
+          Il n’y a pas de plan arrêté. Le travail se construit progressivement, par ajustements, jusqu’à trouver son
+          propre équilibre.
+        </p>
+      </div>
+    </section>
+
+
+
+    <!-- 4. Bande Photo Pleine Largeur - tableaux-bandeau-lagom.jpg -->
+    <div class="artist-img-band-full">
+      <img loading="lazy" src="images/tableaux-bandeau-lagom.jpg" alt="Art Detail Lagom">
+    </div>
+
+
+    <!-- 5. Zone Éditoriale 2 (Matière...) - RESTORED -->
+    <section class="section-light artist-editorial-section">
+      <div class="editorial-col">
+        <h2 data-lk="artist_subtitle_1" class="artist-editorial-title-large">
+          MATIÈRE, LUMIÈRE ET MOUVEMENT</h2>
+        <p data-lk="artist_text_1" class="artist-body normal artist-editorial-text-main">
+          Née à Paris en 1980, Wondavee grandit au contact des formes visuelles et de la création. Au fil du temps, elle
+          explore le dessin, la couleur, le rythme et la matière, avant que l’art fluide ne s’impose comme un terrain
+          d’expression évident.
+          <br><br>
+          Les formes organiques, la lumière et le mouvement occupent une place centrale dans son travail. Courbes,
+          superpositions et variations de texture accompagnent une recherche en évolution constante.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- 6. Zone Démarche - Unified Editorial Rhythm -->
+    <section class="artist-editorial-section artist-section-dark" style="border-top: 1px solid rgba(255,255,255,0.08);">
+      <div class="editorial-col">
+        <h2 data-lk="artist_subtitle_2" class="artist-editorial-title-large" style="color: #fff !important;">
+          Démarche</h2>
+        <p data-lk="artist_text_2" class="artist-body normal artist-editorial-text-intro">
+          Autodidacte, Wondavee construit son travail à partir de l’expérience et de l’exploration continue. Chaque
+          œuvre naît d’un processus fait d’essais, d’observation et d’ajustements successifs.
+          <br><br>
+          La musique influence directement sa manière de travailler, en particulier dans ses créations sur vinyles, où
+          la rotation du support joue un rôle essentiel dans le rendu final. Les œuvres sont présentées sans indication,
+          laissant à chacun la liberté de son propre regard.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- 7. Bande Médias (Défilé Continu + Interaction) -->
+    <div class="artist-carousel-wrapper">
+      <div class="artist-carousel-content" id="artistCarouselContent">
+        <!-- Sequence 1 -->
+        <div class="carousel-item"><img loading="lazy" src="images/vmix.png" alt="Vue Atelier"
+            style="transform: scale(0.92);"></div>
+        <div class="carousel-item"><img loading="lazy" src="images/artiste-bande-defilante-komorebi-.jpg"
+            alt="Komorebi"></div>
+        <div class="carousel-item"><img loading="lazy" src="images/artiste-bande-defilante-basquiat.jpg"
+            alt="Inspiration Basquiat">
+        </div>
+        <div class="carousel-item"><img loading="lazy" src="images/artiste-bande-defilante-infraroots.jpg"
+            alt="Infraroots"></div>
+        <div class="carousel-item"><img loading="lazy" src="images/artiste-bande-defilante-atelier.jpg"
+            alt="Work in Progress"></div>
+        <div class="carousel-item"><img loading="lazy" src="images/artiste-bande-defilante-merak.jpeg" alt="Merak">
+        </div>
+        <div class="carousel-item"><img loading="lazy" src="images/galerie-disco-33t-6.jpg" alt="Série Disco"></div>
+        <div class="carousel-item"><video src="videos/rotation31-1.mp4.mov" preload="none" loop playsinline
+            poster="images/vmix.png" onclick="this.play()"></video>
+        </div>
+        <div class="carousel-item"><img loading="lazy" src="images/ukiyovsw2.jpg" alt="Ukiyo Details"></div>
+        <div class="carousel-item"><img loading="lazy" src="images/ukiyo-tableaux.jpg" alt="Ukiyo View"></div>
+        <div class="carousel-item"><img loading="lazy" src="images/artiste-bande-defilante-pieds.jpg" alt="Pieds"></div>
+        <div class="carousel-item"><img loading="lazy" src="images/vtsj.jpg" alt="Abstrait VTSJ"
+            style="object-position: center 10%; transform: scale(0.95);">
+        </div>
+        <div class="carousel-item"><img loading="lazy" src="images/artiste-bande-defilante-doublecups.jpg"
+            alt="Double Cups"></div>
+        <div class="carousel-item"><img loading="lazy" src="images/artiste-bandeau-bas-2.jpg" alt="Artiste Vue Basse">
+        </div>
+        <div class="carousel-item"><img loading="lazy" src="images/mock-fusion-1.jpg" alt="Mockup Fusion"></div>
+        <div class="carousel-item"><video src="videos/video%20website%202.mp4" preload="none" loop playsinline
+            poster="images/artiste-bandeau-bas-2.jpg" onclick="this.play()"></video>
+        </div>
+
+        <!-- Sequence 2 (Loop) -->
+        <div class="carousel-item"><img loading="lazy" src="images/vmix.png" alt="Vue Atelier"
+            style="transform: scale(0.92);"></div>
+        <div class="carousel-item"><img loading="lazy" src="images/artiste-bande-defilante-komorebi-.jpg"
+            alt="Komorebi"></div>
+        <div class="carousel-item"><img loading="lazy" src="images/artiste-bande-defilante-basquiat.jpg"
+            alt="Inspiration Basquiat">
+        </div>
+        <div class="carousel-item"><img loading="lazy" src="images/artiste-bande-defilante-infraroots.jpg"
+            alt="Infraroots"></div>
+        <div class="carousel-item"><img loading="lazy" src="images/artiste-bande-defilante-atelier.jpg"
+            alt="Work in Progress"></div>
+        <div class="carousel-item"><img loading="lazy" src="images/artiste-bande-defilante-merak.jpeg" alt="Merak">
+        </div>
+        <div class="carousel-item"><img loading="lazy" src="images/galerie-disco-33t-6.jpg" alt="Série Disco"></div>
+        <div class="carousel-item"><video src="videos/rotation31-1.mp4.mov" autoplay muted loop playsinline></video>
+        </div>
+        <div class="carousel-item"><img loading="lazy" src="images/ukiyovsw2.jpg" alt="Ukiyo Details"></div>
+        <div class="carousel-item"><img loading="lazy" src="images/ukiyo-tableaux.jpg" alt="Ukiyo View"></div>
+        <div class="carousel-item"><img loading="lazy" src="images/artiste-bande-defilante-pieds.jpg" alt="Pieds"></div>
+        <div class="carousel-item"><img loading="lazy" src="images/vtsj.jpg" alt="Abstrait VTSJ"
+            style="object-position: center 10%; transform: scale(0.95);">
+        </div>
+        <div class="carousel-item"><img loading="lazy" src="images/artiste-bande-defilante-doublecups.jpg"
+            alt="Double Cups"></div>
+        <div class="carousel-item"><img loading="lazy" src="images/artiste-bandeau-bas-2.jpg" alt="Artiste Vue Basse">
+        </div>
+        <div class="carousel-item"><img loading="lazy" src="images/mock-fusion-1.jpg" alt="Mockup Fusion"></div>
+        <div class="carousel-item"><video src="videos/video%20website.mp4" autoplay muted loop playsinline></video>
+        </div>
+      </div>
+
+      <!-- Controls Premium -->
+      <div class="artist-carousel-controls">
+        <button id="artistPrevBtn" class="carousel-control-btn" aria-label="Précédent">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <button id="artistPlayPauseBtn" class="carousel-control-btn btn-main-control" aria-label="Play/Pause">
+          <span id="artistPlayPauseIcon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="6" y="4" width="4" height="16"></rect>
+              <rect x="14" y="4" width="4" height="16"></rect>
+            </svg>
+          </span>
+        </button>
+        <button id="artistNextBtn" class="carousel-control-btn" aria-label="Suivant">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+
+
+  </main>
+
+  <!-- === PAGE: RECETTES === -->
+  <main id="page-recettes" class="page-view" style="display:none;padding-top: 140px;background: #000;">
+    <section class="container" style="padding-bottom: 80px;">
+      <h2 style="text-align:center;margin-bottom:3rem;letter-spacing:2px;text-transform:uppercase;">Recettes &
+        Alchimie</h2>
+      <div style="max-width: 800px;margin: 0 auto;line-height: 1.8;color: #ccc;text-align: center;">
+        <p id="recette-content" style="font-style: italic;opacity: 0.8;">
+          Cette section présentera bientôt les recettes et secrets de fabrication de Wondavee.
+        </p>
+      </div>
+    </section>
+  </main>
+
+
+
+  <!-- === PAGE: SHOP === -->
+  <main id="page-shop" class="page-view"
+    style="display:none;padding-top: 140px;padding-bottom: 5rem;background: var(--bg-dark-editorial);">
+    <section class="container">
+      <h2 style="text-align:center;margin-bottom:2rem;letter-spacing: 2px;" data-lk="nav_shop">GALERIE</h2>
+
+      <!-- Filtres Interactifs -->
+      <div style="text-align:center;margin-bottom:3rem;letter-spacing: 1px;text-transform:uppercase;">
+
+        <!-- Niveau 1 : Piliers Principaux (TOUT - TABLEAUX - VINYLES) -->
+        <div class="shop-filter-main">
+          <span class="s-filter active-filter" onclick="loadShop(); resetFilters();" data-lk="filter_all">TOUTES LES
+            ŒUVRES</span>
+          <span class="s-filter" onclick="loadShop('Tableaux'); toggleFilterLevel(1, 'tableaux');"
+            data-lk="filter_works">TABLEAUX</span>
+          <span class="s-filter" onclick="loadShop('Vinyles'); toggleFilterLevel(1, 'vinyles');"
+            data-lk="filter_vinyls">VINYLES</span>
+        </div>
+
+        <!-- Niveau 2 : Sous-Filtres TABLEAUX -->
+        <div id="sub-tableaux" class="filter-level-2" style="display:none;">
+          <span class="s-filter" onclick="loadShop('Classique_Tab')" data-lk="filter_classic">CLASSIQUES</span>
+          <span class="s-filter" onclick="loadShop('Tableaux 3D')" data-lk="filter_works3d">TABLEAUX 3D</span>
+        </div>
+
+        <!-- Niveau 2 : Sous-Filtres VINYLES (Choix du tri) -->
+        <div id="sub-vinyles" class="filter-level-2" style="display:none;">
+          <span class="s-filter" onclick="toggleFilterLevel(2, 'v-formats')">PAR FORMAT</span>
+          <span class="s-filter" onclick="toggleFilterLevel(2, 'v-series')">PAR SÉRIE</span>
+        </div>
+
+        <!-- Niveau 3 : Choix Spécifiques VINYLES - FORMATS -->
+        <div id="sub-v-formats" class="filter-level-3" style="display:none;">
+          <span class="s-filter" onclick="loadShop('33T')">33 TOURS</span>
+          <span class="s-filter" onclick="loadShop('45T')">45 TOURS</span>
+          <span class="s-filter" onclick="loadShop('78T')">78 TOURS</span>
+        </div>
+
+        <!-- Niveau 3 : Choix Spécifiques VINYLES - SÉRIES -->
+        <div id="sub-v-series" class="filter-level-3" style="display:none;">
+          <div class="series-compact-grid">
+            <span class="s-filter" onclick="loadShop('808')">808</span>
+            <span class="s-filter" onclick="loadShop('Soul')">SOUL</span>
+            <span class="s-filter" onclick="loadShop('Blood')">BLOOD</span>
+            <span class="s-filter" onclick="loadShop('Arctic')">ARCTIC</span>
+            <span class="s-filter" onclick="loadShop('Sayan')">SAYAN</span>
+            <span class="s-filter" onclick="loadShop('Disco')">DISCO</span>
+            <span class="s-filter" onclick="loadShop('Dream')">DREAM</span>
+            <span class="s-filter" onclick="loadShop('F.Touch')">F.TOUCH</span>
+            <span class="s-filter" onclick="loadShop('Earth')">EARTH</span>
+            <span class="s-filter" onclick="loadShop('Fusion')">FUSION</span>
+            <span class="s-filter" onclick="loadShop('Pop')">POP</span>
+            <span class="s-filter" onclick="loadShop('Ride')">RIDE</span>
+            <span class="s-filter" onclick="loadShop('Rock')">ROCK</span>
+            <span class="s-filter" onclick="loadShop('Wave')">WAVE</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="shop-gallery" class="shop-grid"></div>
+    </section>
+  </main>
+
+  <!-- === PAGE: CONTACT === -->
+  <main id="page-contact" class="page-view"
+    style="display:none;padding-bottom: 80px;background: var(--bg-dark-editorial);">
+    <section class="container" style="padding-top:140px;">
+      <h1 data-lk="contact_title">Contact</h1>
+      <p data-lk="contact_intro"
+        style="margin-top:1.5rem;font-style: italic;max-width: 65ch;margin-left: auto;margin-right: auto;">
+        Pour toute
+        demande, information ou projet autour des œuvres.</p>
+
+      <div class="contact-grid" style="margin-top:3rem;">
+        <!-- Colonne GAUCHE : Formulaire + Photo -->
+        <div class="contact-left">
+          <form id="contact-form" method="POST" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact">
+            <p style="display:none;">
+              <label>Do not fill: <input name="bot-field"></label>
+            </p>
+            <div class="form-group"><input type="text" name="name" class="form-input" placeholder="Votre Nom"
+                data-lk="contact_name" required>
+            </div>
+            <div class="form-group"><input type="email" name="email" class="form-input" placeholder="Email"
+                data-lk="contact_email" required>
+            </div>
+            <div class="form-group"><input type="text" name="subject" class="form-input" placeholder="Sujet"
+                data-lk="contact_subject" required>
+            </div>
+            <div class="form-group"><textarea name="message" class="form-textarea" rows="5" placeholder="Message"
+                data-lk="contact_message" required></textarea></div>
+            <div class="form-group">
+              <label class="form-checkbox-group">
+                <input type="checkbox" name="order_request">
+                <span data-lk="contact_order">Je souhaite passer commande</span>
+              </label>
+            </div>
+            <button type="submit" class="btn-outline" data-lk="contact_send"
+              style="width: 100%;margin-bottom: 1rem;">Envoyer</button>
+          </form>
+
+          <div class="contact-photo">
+            <img loading="lazy" src="images/contact-portrait-new.jpg" alt="Wondavee Artist">
+          </div>
+
+
+        </div>
+
+        <!-- Colonne DROITE : Textes + FAQ + Infos -->
+        <div class="contact-right">
+          <!-- Projets sur mesure -->
+          <div>
+            <h3 data-lk="contact_bespoke_title"
+              style="text-transform: uppercase;letter-spacing: 1px;margin-bottom: 1rem;">Contact &
+              projets sur mesure</h3>
+            <p data-lk="contact_bespoke_text_1" style="color: inherit;margin-bottom: 1rem;">Il est
+              possible de confier un vinyle personnel pour une création sur mesure. Le disque est travaillé comme les
+              pièces de la collection, en respectant le support, son format et son histoire.</p>
+            <p data-lk="contact_bespoke_text_2" style="color: inherit;">Chaque projet est envisagé
+              individuellement, à partir d’un échange préalable. Le travail repose sur la transformation de la
+              matière, le rythme et l’équilibre, sans reproduction ni standardisation.</p>
+          </div>
+
+          <!-- FAQ -->
+          <div class="faq">
+            <h3 data-lk="contact_faq_title"
+              style="text-transform: uppercase;letter-spacing: 1px;margin-bottom: 1.5rem;">FAQ</h3>
+
+            <div class="faq-item">
+              <p><strong data-lk="contact_faq_q1" style="color: inherit;">Quels supports peuvent
+                  être travaillés ?</strong></p>
+              <p data-lk="contact_faq_a1" style="color: inherit;">Vinyles 33 tours, 45 tours et 78
+                tours.</p>
+            </div>
+
+            <div class="faq-item">
+              <p><strong data-lk="contact_faq_q2" style="color: inherit;">Délais de réalisation
+                  ?</strong></p>
+              <p data-lk="contact_faq_a2" style="color: inherit;">Les délais varient selon le
+                projet et le temps de séchage nécessaire. Ils sont précisés lors de l’échange.</p>
+            </div>
+
+            <div class="faq-item">
+              <p><strong data-lk="contact_faq_q3" style="color: inherit;">Puis-je choisir les
+                  couleurs ou le rendu ?</strong></p>
+              <p data-lk="contact_faq_a3" style="color: inherit;">Des orientations sont discutées,
+                sans garantie de résultat figé. Le processus reste ouvert.</p>
+            </div>
+
+            <div class="faq-item">
+              <p><strong data-lk="contact_faq_q4" style="color: inherit;">Comment se fait la
+                  restitution ?</strong></p>
+              <p data-lk="contact_faq_a4" style="color: inherit;">Chaque pièce est vernie, signée
+                et préparée pour être conservée dans le temps.</p>
+            </div>
+          </div>
+
+          <div class="infos">
+            <h3 data-lk="contact_infos" style="text-transform: uppercase;letter-spacing: 1px;margin-bottom: 1.5rem;">
+              Infos</h3>
+
+            <div class="info-item">
+              <a href="mailto:wondavee.art@gmail.com" class="info-link">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>wondavee.art@gmail.com</span>
+              </a>
+            </div>
+
+            <div class="info-item">
+              <a href="https://instagram.com/wondavee.art" target="_blank" class="info-link">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                <span>wondavee.art</span>
+              </a>
+            </div>
+
+            <div class="info-item">
+              <a href="http://www.tiktok.com/@wondavee" target="_blank" class="info-link">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+                </svg>
+                <span>@wondavee</span>
+              </a>
+            </div>
+
+            <div class="info-item">
+              <span class="info-static">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M8 22L12 2L16 22" />
+                  <path d="M6 22H18" />
+                  <path d="M8.5 15.5H15.5" />
+                  <path d="M10 10H14" />
+                </svg>
+                <span>Paris</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-logo-band">
+      <div class="container">
+        <div class="footer-logo">
+          <img loading="lazy" src="images/footer-logo-new.jpg" alt="WONDAVEE">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-main-content">
+      <div class="container">
+        <nav class="footer-nav">
+          <ul class="footer-links-list">
+            <li><a href="#" onclick="route('home')" data-lk="nav_home">Accueil</a></li>
+            <li><a href="#" onclick="route('tableaux')" data-lk="nav_works">Tableaux</a></li>
+            <li><a href="#" onclick="route('vinyles')" data-lk="nav_vinyles">Vinyles</a></li>
+            <li><a href="#" onclick="route('artiste')" data-lk="nav_artist">L’artiste</a></li>
+            <li><a href="#" onclick="route('contact')" data-lk="nav_contact">Contact</a></li>
+            <li><a href="https://instagram.com/wondavee.art" target="_blank">Instagram</a></li>
+            <li><a href="http://www.tiktok.com/@wondavee" target="_blank">TikTok</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-bottom">
+          <p>© 2025 Wondavee — Tous droits réservés · <a href="#">Mentions légales</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="script.js"></script>
+
+  <!-- MODAL PRODUIT -->
+  <div id="product-modal"
+    style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.94);z-index:9999;align-items:center;justify-content:center;flex-direction:column;backdrop-filter: blur(8px);">
+
+    <div
+      style="position:relative; width:95%; max-width:1100px; display:flex; flex-direction:column; align-items:center;">
+      <div class="modal-close" onclick="closeProductModal()">
+        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </div>
+
+      <div
+        style="height:72vh; width:100%; display:flex; align-items:center; justify-content:center; margin-bottom: 2rem;">
+        <img id="modal-img" src=""
+          style="max-height:100%; max-width:100%; object-fit:contain; cursor:zoom-in; transition: transform 0.3s ease; box-shadow: 0 20px 60px rgba(0,0,0,0.6);"
+          onclick="this.style.transform = this.style.transform === 'scale(1.8)' ? 'scale(1)' : 'scale(1.8)';this.style.cursor = this.style.transform === 'scale(1.8)' ? 'zoom-out' : 'zoom-in';">
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:1.5rem;color: inherit;">
+      <h3 id="modal-title" style="margin:0 0 0.6rem 0;text-transform:uppercase;letter-spacing:2px;font-size: 1.2rem;">
+        TITLE
+      </h3>
+      <p id="modal-sub" style="color:#CCC;margin:0 0 1.2rem 0;font-size: 0.9rem;letter-spacing: 0.05em;">Subtitle
+      </p>
+      <a id="modal-status" href="#" onclick="event.preventDefault();route('contact');closeProductModal();"
+        style="cursor:pointer;font-weight:bold;letter-spacing:1px;border:1px solid #fff;color:#fff;padding: 6px 18px;display:inline-block;border-radius:50px;transition: all 0.2s;text-decoration:none;font-size: 0.85rem;">Disponible</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
