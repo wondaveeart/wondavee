@@ -45,35 +45,6 @@
     height: 400px !important;
     object-fit: cover !important;
   }
-
-  .wide-art-red {
-    height: 35vh !important;
-    max-height: 400px !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .wide-art-red {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
-
-  .pre-wide-art {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-    overflow: hidden;
-  }
-
-  .pre-wide-art p {
-    margin-bottom: 0 !important;
-  }
-
-  .wide-art-red img {
-    margin-top: -50px !important;
-    height: calc(100% + 50px) !important;
-    object-position: center center !important;
-    transform: scale(1.08) !important;
-  }
 }
 
 body {
@@ -1763,21 +1734,6 @@ header#main-header *,
   font-weight: 500 !important;
   letter-spacing: 0.1em !important;
   box-shadow: none !important;
-}
-
-.hero-custom-btn {
-  border: 2px solid rgba(255, 255, 255, 0.9) !important;
-  background: rgba(255, 255, 255, 0.15) !important;
-  color: white !important;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9) !important;
-  backdrop-filter: blur(4px) !important;
-  transition: all 0.3s ease !important;
-}
-
-.hero-custom-btn:hover,
-.hero-custom-btn:active {
-  background: rgba(255, 255, 255, 0.6) !important;
-  color: #000 !important;
   text-shadow: none !important;
 }
 
@@ -3113,5 +3069,7 @@ body {
   .contact-right p,
   .faq-item p {
     text-align: left !important;
+    hyphens: auto;
+    /* Aide à la lisibilité sur écrans étroits */
   }
 }

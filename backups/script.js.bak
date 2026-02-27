@@ -16,15 +16,8 @@ const translations = {
     nav_shop: "Galerie",
     nav_series: "Séries",
     nav_contact: "Contact",
-    nav_tagline: "ART CONTEMPORAIN",
 
-    btn_discover: "DÉCOUVRIR LES ŒUVRES",
-    btn_about: "À PROPOS",
-    btn_read_more: "LIRE PLUS",
-    btn_see_vinyls: "VOIR VINYLES",
-    btn_see_paintings: "VOIR TABLEAUX",
-
-    filter_all: "TOUTES LES ŒUVRES",
+    filter_all: "TOUT",
     filter_works: "TABLEAUX",
     filter_classic: "CLASSIQUES",
     filter_works3d: "3D",
@@ -61,7 +54,7 @@ const translations = {
     tableaux_central_2: "Les couches se déposent, se déplacent et se répondent, créant des rythmes et des tensions propres à chaque pièce.",
 
     // Vinyls Page
-    vinyls_central_1: "Les premiers souvenirs de vinyles de Wondavee remontent aux années 80. Enfant, chez elle, des disques de Lionel Richie, Boney M ou Phil Collins tournent sur la platine familiale. In 1992, elle a sa première chaîne hifi, elle fait tout : cassette, vinyle, cd… un bonheur. Son premier réflexe, aller chiner des vinyles pas cher juste pour faire tourner de la musique. Rapidement, elle utilise son radio/cassettes pour enregistrer ses compils perso.",
+    vinyls_central_1: "Les premiers souvenirs de vinyles de Wondavee remontent aux années 80. Enfant, chez elle, des disques de Lionel Richie, Boney M ou Phil Collins tournent sur la platine familiale. En 1992, elle a sa première chaîne hifi, elle fait tout : cassette, vinyle, cd… un bonheur. Son premier réflexe, aller chiner des vinyles pas cher juste pour faire tourner de la musique. Rapidement, elle utilise son radio/cassettes pour enregistrer ses compils perso.",
     vinyls_large_1: "Entourée très tôt de personnes créatives, Wondavee développe un lien naturel avec la musique. Pour ses 13 ans, elle rêve d’un piano ; elle reçoit un synthétiseur et en dévore la notice. Avec des amies, elle compose un premier morceau. À la même période, elle vit à côté d’un studio d’enregistrement utilisé notamment par Ray Charles à Paris. Habituée des lieux, des équipes et des artistes, ils lui enregistrent cette chanson.\n\nÀ 15 ans, son identité musicale se construit autour du hip-hop, d’abord très marquée par les productions de la côte Est. Au Virgin Megastore des Champs-Élysées, elle rencontre des membres d’un collectif hip-hop West Coast actif dans le Val-de-Marne, qu’elle rejoint. Elle s’implique pleinement dans le projet : Enregistrements, concerts, danse, chœurs, merchandising. La musique tient une place importante dans sa vie. Ses playlists se multiplient au gré de ses humeurs.",
     vinyls_large_2: "En tombant par hasard sur un stock de vinyles en piteux état, l'évidence s'est imposée comme un signe, un cadeau. Le vinyle est un objet mythique. Non recyclable, il nécessite un traitement adapté pour pouvoir être transformé en Wondavee-nyl.",
     vinyls_central_2: "150 vinyles uniques constituent la collection 2025. Chaque série correspond à un climat visuel et rythmique, sans hiérarchie dans laquelle 45 tours, 33 tours et 78 tours coexistent. Ces séries forment un ensemble, comme les morceaux d’un même album.",
@@ -86,7 +79,7 @@ const translations = {
     status_sold: "Oeuvre acquise",
 
     // Artist Page
-    artist_intro_text: "Née à Paris en 1980, Wondavee grandit à Montmartre, dans la boulangerie de sa mère. Un environnement fait de gestes répétés, de matières en transformation, d’odeurs, de textures, de couleurs. Très tôt, elle observe, manipule, expérimente. À la boulangerie, elle dessine les affiches. Enfant, elle vend les cartes postales qu'elle dessine aux touristes sur la place du Tertre.",
+    artist_intro_text: "Née à Paris en 1980, Wondavee grandit à Montmartre, dans la boulangerie de sa mère. Un environnement fait de gestes répétés, de matières en transformation, d’odeurs, de textures, de couleurs. Très tôt, elle observe, manipule, expérimente. À la boulangerie, elle dessine les affiches. Enfant, elle vend ses cartes postales dessinées aux touristes sur la place du Tertre.",
     artist_subtitle_1: "Matière, lumière et mouvement",
     artist_text_1: "La matière est déjà là, partout. Elle la façonne sous différentes formes. Jusqu’à l’âge de 18 ans, elle travaille régulièrement l’argile, pratique la poterie, attirée par les volumes et les formes. Fascinée par l’Égypte ancienne, elle modèle des sphynx, sensible à ce qui traverse le temps et à la puissance des symboles.\n\nParallèlement, elle s’intéresse à la naturopathie. Aux produits naturels, à leurs propriétés, à leurs transformations. Elle prépare elle-même de nombreux produits du quotidien, infusions et soins, en travaillant des <a href=\"#\" onclick=\"route('recettes')\" class=\"artist-link\">recettes</a>, des dosages, des équilibres. Ce rapport direct à la matière, au mélange, à la réaction, nourrit profondément sa manière de créer.",
     artist_subtitle_2: "Démarche et remix visuel",
@@ -98,7 +91,7 @@ const translations = {
     contact_intro: "Pour toute demande, information ou projet autour des œuvres.",
     contact_bespoke_title: "Contact & projets sur mesure",
     contact_bespoke_text_1: "Il est possible de confier un vinyle personnel pour une création sur mesure. Le disque est travaillé comme les pièces de la collection, en respectant le support, son format et son histoire.",
-    contact_bespoke_text_2: "Chaque projet est envisagé individuellement, à partir d’un échange préalable. Le travail repose sur la transformation de la matière, le rythme et l'équilibre, sans reproduction ni standardisation.",
+    contact_bespoke_text_2: "Chaque projet est envisagé individuellement, à partir d’un échange préalable. Le travail repose sur la transformation de la matière, le rythme et l’équilibre, sans reproduction ni standardisation.",
 
     contact_faq_title: "FAQ",
     contact_faq_q1: "Quels supports peuvent être travaillés ?",
@@ -132,15 +125,8 @@ const translations = {
     nav_shop: "Gallery",
     nav_series: "Series",
     nav_contact: "Contact",
-    nav_tagline: "CONTEMPORARY ART",
 
-    btn_discover: "DISCOVER THE WORKS",
-    btn_about: "ABOUT",
-    btn_read_more: "READ MORE",
-    btn_see_vinyls: "SEE VINYLS",
-    btn_see_paintings: "SEE PAINTINGS",
-
-    filter_all: "ALL ARTWORKS",
+    filter_all: "ALL",
     filter_works: "PAINTINGS",
     filter_classic: "CLASSIC",
     filter_works3d: "3D",
@@ -338,49 +324,18 @@ function route(pageId, filterParam = null, pushToHistory = true) {
   if (header) header.classList.remove('menu-open');
 }
 
-// --- SHOP FILTER SYSTEM (REORGANIZED) ---
-function toggleFilterLevel(level, groupId) {
-  // Masquer les niveaux inférieurs si on change de branche
-  if (level === 1) {
-    const level2 = ['sub-tableaux', 'sub-vinyles'];
-    const level3 = ['sub-v-formats', 'sub-v-series'];
-    level2.forEach(id => {
-      const el = document.getElementById(id);
-      if (el) el.style.display = (id === 'sub-' + groupId) ? 'block' : 'none';
-    });
-    level3.forEach(id => {
-      const el = document.getElementById(id);
-      if (el) el.style.display = 'none';
-    });
-  } else if (level === 2) {
-    const level3 = ['sub-v-formats', 'sub-v-series'];
-    level3.forEach(id => {
-      const el = document.getElementById(id);
-      if (el) el.style.display = (id === 'sub-' + groupId) ? 'block' : 'none';
-    });
-  }
-
-  // Gérer l'état actif visuel
-  const clickedEl = event ? event.currentTarget : null;
-  if (clickedEl && clickedEl.classList.contains('s-filter')) {
-    // Dans le même groupe, enlever active
-    const parent = clickedEl.parentElement;
-    parent.querySelectorAll('.s-filter').forEach(s => s.classList.remove('active-filter'));
-    clickedEl.classList.add('active-filter');
-  }
-}
-
-function resetFilters() {
-  const levels = ['sub-tableaux', 'sub-vinyles', 'sub-v-formats', 'sub-v-series'];
-  levels.forEach(id => {
+// --- SHOP FILTER GROUPS ---
+function toggleFilterGroup(groupId) {
+  const groups = ['group-tableaux', 'group-vinyles'];
+  groups.forEach(id => {
     const el = document.getElementById(id);
-    if (el) el.style.display = 'none';
+    if (!el) return;
+    if (id === 'group-' + groupId) {
+      el.style.display = (el.style.display === 'none' || !el.style.display) ? 'block' : 'none';
+    } else {
+      el.style.display = 'none';
+    }
   });
-
-  // Reset active states on main pillars
-  document.querySelectorAll('.shop-filter-main .s-filter').forEach(s => s.classList.remove('active-filter'));
-  const allBtn = document.querySelector('.shop-filter-main .s-filter[onclick*="loadShop()"]');
-  if (allBtn) allBtn.classList.add('active-filter');
 }
 
 // --- HERO PLAY/UNMUTE CONTROL (SOBRE) ---
@@ -392,8 +347,8 @@ function initHeroPlayControl() {
   if (!video || !playBtn || !iconWrap) return;
 
   const ICONS = {
-    play: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>`,
-    pause: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>`
+    play: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>`,
+    pause: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>`
   };
 
   // Force initial muted state for autoplay
@@ -404,12 +359,9 @@ function initHeroPlayControl() {
   };
 
   playBtn.addEventListener('click', () => {
-    if (video.paused) {
-      video.play();
+    if (video.muted) {
       video.muted = false;
-      if (video.volume === 0) video.volume = 0.6;
-    } else if (video.muted) {
-      video.muted = false;
+      // Optionnel: s'assurer que le volume est audible
       if (video.volume === 0) video.volume = 0.6;
     } else {
       video.muted = true;
@@ -417,9 +369,7 @@ function initHeroPlayControl() {
     updateUI();
   });
 
-  video.addEventListener('play', updateUI);
-  video.addEventListener('pause', updateUI);
-  video.addEventListener('volumechange', updateUI);
+  // Initial sync
   updateUI();
 }
 
@@ -432,9 +382,9 @@ function initVinylVideoControl() {
   if (!video || !btn || !iconWrap) return;
 
   const ICONS = {
-    play: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>`,
-    pause: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>`,
-    volume: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>`
+    play: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>`,
+    pause: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>`,
+    volume: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>`
   };
 
   const updateUI = () => {
@@ -493,21 +443,21 @@ function toggleMenu() {
 
 // --- GALLERY SYSTEM (REAL DATA - OLD WORKS PAGE) ---
 const artworkData = [
-  // VINYLES (1-10) - Sélection de fichiers existants
-  { id: 'v1', title: 'Vinyl #01', category: 'vinyles', series: 'Special', image: 'vinyle_02.jpg', year: '2024', size: '30cm', status: 'disponible' },
+  // VINYLES (1-10)
+  { id: 'v1', title: 'Vinyl #01', category: 'vinyles', series: 'Blood', image: 'vinyl-1.jpg', year: '2024', size: '30cm', status: 'disponible' },
   { id: 'v2', title: 'Vinyl #02', category: 'vinyles', series: 'Ride', image: 'vinyl-2.jpg', year: '2024', size: '30cm', status: 'disponible' },
-  { id: 'v3', title: 'Vinyl #03', category: 'vinyles', series: 'Arctic', image: 'vinyl-blue-new.jpg', year: '2024', size: '30cm', status: 'vendu' },
+  { id: 'v3', title: 'Vinyl #03', category: 'vinyles', series: 'Arctic', image: 'vinyl-3.jpg', year: '2024', size: '30cm', status: 'vendu' },
   { id: 'v4', title: 'Vinyl #04', category: 'vinyles', series: 'Wave', image: 'vinyl-4.jpg', year: '2024', size: '30cm', status: 'disponible' },
   { id: 'v5', title: 'Vinyl #05', category: 'vinyles', series: 'Dream', image: 'vinyl-5.jpg', year: '2024', size: '30cm', status: 'disponible' },
-  { id: 'v6', title: 'Vinyl #06', category: 'vinyles', series: 'Process', image: 'vinyl-gold-process.jpg', year: '2024', size: '30cm', status: 'disponible' },
-  { id: 'v7', title: 'Vinyl #07', category: 'vinyles', series: 'Soul', image: 'vinyl-pink-new.jpg', year: '2024', size: '30cm', status: 'disponible' },
-  { id: 'v8', title: 'Vinyl #08', category: 'vinyles', series: 'Pop', image: 'vinyl-red-new.jpg', year: '2024', size: '30cm', status: 'reserve' },
-  { id: 'v9', title: 'Vinyl #09', category: 'vinyles', series: 'Rock', image: 'vinylmock4.jpg', year: '2024', size: '30cm', status: 'disponible' },
-  { id: 'v10', title: 'Vinyl #10', category: 'vinyles', series: '808', image: 'vinylmock6.jpg', year: '2024', size: '30cm', status: 'disponible' },
+  { id: 'v6', title: 'Vinyl #06', category: 'vinyles', series: 'Jungle', image: 'vinyl-6.jpg', year: '2024', size: '30cm', status: 'disponible' },
+  { id: 'v7', title: 'Vinyl #07', category: 'vinyles', series: 'Soul', image: 'vinyl-7.jpg', year: '2024', size: '30cm', status: 'disponible' },
+  { id: 'v8', title: 'Vinyl #08', category: 'vinyles', series: 'Pop', image: 'vinyl-8.jpg', year: '2024', size: '30cm', status: 'reserve' },
+  { id: 'v9', title: 'Vinyl #09', category: 'vinyles', series: 'Rock', image: 'vinyl-9.jpg', year: '2024', size: '30cm', status: 'disponible' },
+  { id: 'v10', title: 'Vinyl #10', category: 'vinyles', series: '808', image: 'vinyl-10.jpg', year: '2024', size: '30cm', status: 'disponible' },
 
-  // TABLEAUX (Utilisation de mockups existants au lieu de placeholders)
-  { id: 't1', title: 'Ether I', category: 'tableaux', series: 'Abstrait', image: 'mock-tableaux-1.jpg', year: '2023', size: '80x60cm', status: 'disponible' },
-  { id: 't2', title: 'Ether II', category: 'tableaux', series: 'Abstrait', image: 'mock-tableaux-2.jpg', year: '2023', size: '100x100cm', status: 'disponible' },
+  // TABLEAUX (Mockup)
+  { id: 't1', title: 'Ether I', category: 'tableaux', series: 'Abstrait', image: 'https://placehold.co/600x800/222/FFF?text=Tableau+1', year: '2023', size: '80x60cm', status: 'disponible' },
+  { id: 't2', title: 'Ether II', category: 'tableaux', series: 'Abstrait', image: 'https://placehold.co/600x800/333/FFF?text=Tableau+2', year: '2023', size: '100x100cm', status: 'disponible' },
 ];
 
 function filterWorks(filter) {
@@ -643,7 +593,6 @@ function loadShop(filter = null) {
 
         const soldVinyles = [
           'galerie-arctic-33t-2.jpg', 'galerie-blood-33t-3.jpg', 'galerie-disco-33t-6.jpg',
-          'galerie-disco-33t-11.jpg', 'galerie-ride-33t-10.jpg', 'galerie-ride-33t-11.jpg',
           'galerie-earth-33t-3.jpg', 'galerie-fusion-33t-1.jpg', 'galerie-fusion-33t-2.jpg',
           'galerie-ride-33t-4.jpg', 'galerie-ride-33t-13.jpg', 'galerie-ride-33t-20.jpg',
           'galerie-soul-33t-1.jpg', 'galerie-wave-33tl-33t-2.jpg', 'galerie-wave-33t-9.jpg',
@@ -714,12 +663,11 @@ function loadShop(filter = null) {
 
         html += `
              <div class="shop-item">
-                <div ${clickAttr}>
-                     <img src="${url}" 
-                          alt="${finalItemTitle}"
-                          loading="lazy"
-                          onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;aspect-ratio:1/1;font-size:0.7rem;color:#444;background:#111;\'>IMAGE PENDING</div>'">
-                </div>
+               <div ${clickAttr}>
+                    <img src="${url}" 
+                         alt="${finalItemTitle}"
+                         onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;aspect-ratio:1/1;font-size:0.7rem;color:#444;background:#111;\'>IMAGE PENDING</div>'">
+               </div>
                <div class="shop-item-title">${finalItemTitle}</div>
                <div class="shop-item-meta">${finalItemSub}</div>
              </div>
@@ -773,7 +721,7 @@ function loadShop(filter = null) {
       const dims = "20 x 60 cm (x2)";
       const price = "700€ (Duo)";
 
-      const soldTableaux = ['shop-120x80-sabaism.jpeg', 'shop-40x40-marmoris.jpg', 'shop-50x70-yatta.jpg', 'shop-20x40-rasasvada-3d.jpeg'];
+      const soldTableaux = ['shop-120x80-sabaism.jpeg', 'shop-40x40-marmoris.jpg', 'shop-50x70-yatta.jpg'];
       const isSold = soldTableaux.includes(filename) || soldTableaux.includes(pairFile);
       const statusLabel = isSold
         ? (translations[currentLang]?.status_sold || 'Vendue')
@@ -819,7 +767,7 @@ function loadShop(filter = null) {
     else if (dimsRaw === '20x60') price = '280€';
 
     const soldTableaux = [
-      'shop-120x80-sabaism.jpeg', 'shop-40x40-marmoris.jpg', 'shop-50x70-yatta.jpg', 'shop-20x40-rasasvada-3d.jpeg'
+      'shop-120x80-sabaism.jpeg', 'shop-40x40-marmoris.jpg', 'shop-50x70-yatta.jpg'
     ];
     const isSold = soldTableaux.includes(filename);
     const statusLabel = isSold

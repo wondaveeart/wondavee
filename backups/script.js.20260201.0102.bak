@@ -86,7 +86,7 @@ const translations = {
     status_sold: "Oeuvre acquise",
 
     // Artist Page
-    artist_intro_text: "Née à Paris en 1980, Wondavee grandit à Montmartre, dans la boulangerie de sa mère. Un environnement fait de gestes répétés, de matières en transformation, d’odeurs, de textures, de couleurs. Très tôt, elle observe, manipule, expérimente. À la boulangerie, elle dessine les affiches. Enfant, elle vend les cartes postales qu'elle dessine aux touristes sur la place du Tertre.",
+    artist_intro_text: "Née à Paris en 1980, Wondavee grandit à Montmartre, dans la boulangerie de sa mère. Un environnement fait de gestes répétés, de matières en transformation, d’odeurs, de textures, de couleurs. Très tôt, elle observe, manipule, expérimente. À la boulangerie, elle dessine les affiches. Enfant, elle vend ses cartes postales dessinées aux touristes sur la place du Tertre.",
     artist_subtitle_1: "Matière, lumière et mouvement",
     artist_text_1: "La matière est déjà là, partout. Elle la façonne sous différentes formes. Jusqu’à l’âge de 18 ans, elle travaille régulièrement l’argile, pratique la poterie, attirée par les volumes et les formes. Fascinée par l’Égypte ancienne, elle modèle des sphynx, sensible à ce qui traverse le temps et à la puissance des symboles.\n\nParallèlement, elle s’intéresse à la naturopathie. Aux produits naturels, à leurs propriétés, à leurs transformations. Elle prépare elle-même de nombreux produits du quotidien, infusions et soins, en travaillant des <a href=\"#\" onclick=\"route('recettes')\" class=\"artist-link\">recettes</a>, des dosages, des équilibres. Ce rapport direct à la matière, au mélange, à la réaction, nourrit profondément sa manière de créer.",
     artist_subtitle_2: "Démarche et remix visuel",
@@ -493,21 +493,21 @@ function toggleMenu() {
 
 // --- GALLERY SYSTEM (REAL DATA - OLD WORKS PAGE) ---
 const artworkData = [
-  // VINYLES (1-10) - Sélection de fichiers existants
-  { id: 'v1', title: 'Vinyl #01', category: 'vinyles', series: 'Special', image: 'vinyle_02.jpg', year: '2024', size: '30cm', status: 'disponible' },
+  // VINYLES (1-10)
+  { id: 'v1', title: 'Vinyl #01', category: 'vinyles', series: 'Blood', image: 'vinyl-1.jpg', year: '2024', size: '30cm', status: 'disponible' },
   { id: 'v2', title: 'Vinyl #02', category: 'vinyles', series: 'Ride', image: 'vinyl-2.jpg', year: '2024', size: '30cm', status: 'disponible' },
-  { id: 'v3', title: 'Vinyl #03', category: 'vinyles', series: 'Arctic', image: 'vinyl-blue-new.jpg', year: '2024', size: '30cm', status: 'vendu' },
+  { id: 'v3', title: 'Vinyl #03', category: 'vinyles', series: 'Arctic', image: 'vinyl-3.jpg', year: '2024', size: '30cm', status: 'vendu' },
   { id: 'v4', title: 'Vinyl #04', category: 'vinyles', series: 'Wave', image: 'vinyl-4.jpg', year: '2024', size: '30cm', status: 'disponible' },
   { id: 'v5', title: 'Vinyl #05', category: 'vinyles', series: 'Dream', image: 'vinyl-5.jpg', year: '2024', size: '30cm', status: 'disponible' },
-  { id: 'v6', title: 'Vinyl #06', category: 'vinyles', series: 'Process', image: 'vinyl-gold-process.jpg', year: '2024', size: '30cm', status: 'disponible' },
-  { id: 'v7', title: 'Vinyl #07', category: 'vinyles', series: 'Soul', image: 'vinyl-pink-new.jpg', year: '2024', size: '30cm', status: 'disponible' },
-  { id: 'v8', title: 'Vinyl #08', category: 'vinyles', series: 'Pop', image: 'vinyl-red-new.jpg', year: '2024', size: '30cm', status: 'reserve' },
-  { id: 'v9', title: 'Vinyl #09', category: 'vinyles', series: 'Rock', image: 'vinylmock4.jpg', year: '2024', size: '30cm', status: 'disponible' },
-  { id: 'v10', title: 'Vinyl #10', category: 'vinyles', series: '808', image: 'vinylmock6.jpg', year: '2024', size: '30cm', status: 'disponible' },
+  { id: 'v6', title: 'Vinyl #06', category: 'vinyles', series: 'Jungle', image: 'vinyl-6.jpg', year: '2024', size: '30cm', status: 'disponible' },
+  { id: 'v7', title: 'Vinyl #07', category: 'vinyles', series: 'Soul', image: 'vinyl-7.jpg', year: '2024', size: '30cm', status: 'disponible' },
+  { id: 'v8', title: 'Vinyl #08', category: 'vinyles', series: 'Pop', image: 'vinyl-8.jpg', year: '2024', size: '30cm', status: 'reserve' },
+  { id: 'v9', title: 'Vinyl #09', category: 'vinyles', series: 'Rock', image: 'vinyl-9.jpg', year: '2024', size: '30cm', status: 'disponible' },
+  { id: 'v10', title: 'Vinyl #10', category: 'vinyles', series: '808', image: 'vinyl-10.jpg', year: '2024', size: '30cm', status: 'disponible' },
 
-  // TABLEAUX (Utilisation de mockups existants au lieu de placeholders)
-  { id: 't1', title: 'Ether I', category: 'tableaux', series: 'Abstrait', image: 'mock-tableaux-1.jpg', year: '2023', size: '80x60cm', status: 'disponible' },
-  { id: 't2', title: 'Ether II', category: 'tableaux', series: 'Abstrait', image: 'mock-tableaux-2.jpg', year: '2023', size: '100x100cm', status: 'disponible' },
+  // TABLEAUX (Mockup)
+  { id: 't1', title: 'Ether I', category: 'tableaux', series: 'Abstrait', image: 'https://placehold.co/600x800/222/FFF?text=Tableau+1', year: '2023', size: '80x60cm', status: 'disponible' },
+  { id: 't2', title: 'Ether II', category: 'tableaux', series: 'Abstrait', image: 'https://placehold.co/600x800/333/FFF?text=Tableau+2', year: '2023', size: '100x100cm', status: 'disponible' },
 ];
 
 function filterWorks(filter) {
@@ -773,7 +773,7 @@ function loadShop(filter = null) {
       const dims = "20 x 60 cm (x2)";
       const price = "700€ (Duo)";
 
-      const soldTableaux = ['shop-120x80-sabaism.jpeg', 'shop-40x40-marmoris.jpg', 'shop-50x70-yatta.jpg', 'shop-20x40-rasasvada-3d.jpeg'];
+      const soldTableaux = ['shop-120x80-sabaism.jpeg', 'shop-40x40-marmoris.jpg', 'shop-50x70-yatta.jpg'];
       const isSold = soldTableaux.includes(filename) || soldTableaux.includes(pairFile);
       const statusLabel = isSold
         ? (translations[currentLang]?.status_sold || 'Vendue')
@@ -819,7 +819,7 @@ function loadShop(filter = null) {
     else if (dimsRaw === '20x60') price = '280€';
 
     const soldTableaux = [
-      'shop-120x80-sabaism.jpeg', 'shop-40x40-marmoris.jpg', 'shop-50x70-yatta.jpg', 'shop-20x40-rasasvada-3d.jpeg'
+      'shop-120x80-sabaism.jpeg', 'shop-40x40-marmoris.jpg', 'shop-50x70-yatta.jpg'
     ];
     const isSold = soldTableaux.includes(filename);
     const statusLabel = isSold

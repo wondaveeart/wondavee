@@ -63,7 +63,7 @@
         <li><a href="#" class="nav-link active" onclick="route('home')" data-lk="nav_home">Accueil</a></li>
         <li><a href="#" class="nav-link" onclick="route('tableaux')" data-lk="nav_works">Tableaux</a></li>
         <li><a href="#" class="nav-link" onclick="route('vinyles')" data-lk="nav_vinyles">Vinyles</a></li>
-        <li><a href="#" class="nav-link" onclick="route('artiste')" data-lk="nav_artist">L'artiste</a></li>
+        <li><a href="#" class="nav-link" onclick="route('artiste')" data-lk="nav_artist">L’artiste</a></li>
         <li><a href="#" class="nav-link" onclick="route('shop')" data-lk="nav_shop">Shop</a></li>
         <li><a href="#" class="nav-link" onclick="route('contact')" data-lk="nav_contact">Contact</a></li>
       </ul>
@@ -90,13 +90,12 @@
       </video>
 
       <div class="container hero-content">
-        <h1 data-fr="L'émotion en mouvement" data-en="Emotion in Motion">L'émotion en mouvement</h1>
+        <h1 data-fr="L’émotion en mouvement" data-en="Emotion in Motion">L'émotion en mouvement</h1>
         <p data-fr="Peinture fluide & Art abstrait par Wondavee" data-en="Fluid Painting & Abstract Art by Wondavee">
           Peinture fluide & Art abstrait par Wondavee</p>
         <div class="hero-buttons">
-          <button class="btn-outline hero-custom-btn" onclick="route('series')" data-lk="btn_discover">Découvrir les
-            œuvres</button>
-          <button class="btn-outline hero-custom-btn" onclick="route('artiste')" data-lk="btn_about">À propos</button>
+          <button class="btn-outline" onclick="route('series')" data-lk="btn_discover">Découvrir les œuvres</button>
+          <button class="btn-outline" onclick="route('artiste')" data-lk="btn_about">À propos</button>
           <button id="hero-play-btn" class="hero-play-toggle" type="button" aria-label="Activer l'expérience">
             <span class="play-icon-wrap" id="play-icon-main">
               <!-- SVG PLAY Initial -->
@@ -124,7 +123,7 @@
             jeux de couleurs.</p>
           <p data-lk="home_artist_text_2"
             style="margin: 0 !important;line-height: 1.8 !important;font-style: italic;opacity: 0.9;">
-            " Mes oeuvres ne laissent pas indifférents. L'enfant intérieur impulse, l'âme expérimentée ajuste. "</p>
+            « Mes oeuvres ne laissent pas indifférents. L’enfant intérieur impulse, l’âme expérimentée ajuste. »</p>
         </div>
         <button class="btn-outline" onclick="route('artiste')" style="margin-top: 10px !important;"
           data-lk="btn_read_more">LIRE PLUS</button>
@@ -148,7 +147,7 @@
         <div style="max-width: 45ch;margin-bottom: 10px;">
           <p data-lk="home_vinyls_text_1" style="margin: 0 0 12px 0 !important;line-height: 1.55 !important;">Sur un
             Vinyle, support non recyclable, la transformation devient un acte évident. Les Wondavee-Nyls sont finalisés
-            en rotation, résultats d'un rythme et de sa répétition à la manière d'un beat.</p>
+            en rotation, résultats d’un rythme et de sa répétition à la manière d’un beat.</p>
           <p data-lk="home_vinyls_text_2" style="margin: 0 0 10px 0 !important;line-height: 1.55 !important;">La
             collection 2025 se compose de 150 vinyles uniques, répartis en différentes séries et tailles, où chaque
             pièce affirme sa singularité.</p>
@@ -172,7 +171,7 @@
           couleurs de réagir, de se superposer et de se sublimer ensemble laissant le mouvement, les couches et les
           réactions guider chaque œuvre.</p>
         <p data-lk="home_paintings_text_2" style="margin-top: 1rem;">Textures, rythmes et variations
-          de surface compose des pièces uniques, issues d'un travail à la fois intuitif et maîtrisé.</p>
+          de surface compose des pièces uniques, issues d’un travail à la fois intuitif et maîtrisé.</p>
         <button class="btn-outline" onclick="route('tableaux')" style="margin-top: 2rem;"
           data-lk="btn_see_paintings">Voir Tableaux</button>
       </div>
@@ -211,9 +210,9 @@
     <section class="reveal" style="padding: 4rem 2rem;background: #000;color: #fff;">
       <div style="max-width: 75ch;margin: 0 auto;line-height: 1.8;">
         <p data-lk="tableaux_central_1" style="opacity: 0.9;margin: 0;">Un tableau amène une
-          dimension supplémentaire a une pièce. Une dimension choisie à un moment donné, qui fait du bien à l'univers
-          que l'on traverse alors. Il installe une atmosphère, il fait circuler une énergie différente. Rien n'est figé,
-          tout est cyclique. Certaines toiles apaisent, d'autres remuent, parfois profondément.</p>
+          dimension supplémentaire a une pièce. Une dimension choisie à un moment donné, qui fait du bien à l’univers
+          que l’on traverse alors. Il installe une atmosphère, il fait circuler une énergie différente. Rien n’est figé,
+          tout est cyclique. Certaines toiles apaisent, d’autres remuent, parfois profondément.</p>
       </div>
     </section>
 
@@ -249,18 +248,18 @@
     </section>
 
     <!-- 11. Zone Éditoriale (Émotions) -->
-    <section class="reveal pre-wide-art" style="padding: 4rem 2rem;background: #000;color: #fff;">
+    <section class="reveal" style="padding: 4rem 2rem;background: #000;color: #fff;">
       <div style="max-width: 65ch;margin: 0 auto;line-height: 1.8;">
-        <p data-lk="tableaux_large_1" style="opacity: 0.9;">Même s'il ne
-          s'exprime pas, le tableau communique. Il te parle, littéralement, il transmet des émotions. Pour Wondavee,
-          c'est un puzzle intrigant et évident en même temps, à travers ses toiles, elle diffuse des énergies
+        <p data-lk="tableaux_large_1" style="opacity: 0.9;">Même s’il ne
+          s’exprime pas, le tableau communique. Il te parle, littéralement, il transmet des émotions. Pour Wondavee,
+          c’est un puzzle intrigant et évident en même temps, à travers ses toiles, elle diffuse des énergies
           bienfaisantes, des énergies d'amour.</p>
       </div>
     </section>
 
 
     <!-- 13. Bande Large (Wide Art) -->
-    <section class="reveal wide-art-red"
+    <section class="reveal"
       style="position: relative;height: 65vh;max-height: 680px;width: 100%;overflow: hidden;background: #000;margin: 0;padding: 0;">
       <img loading="lazy" src="images/atelier-process-red.jpg" alt="Processus de création Wondavee"
         style="width:100%;height:100%;object-fit:cover;object-position: center 85%;display:block;">
@@ -441,8 +440,8 @@
       style="min-height: 40vh;display: flex;align-items: center;justify-content: center;background: #000;padding: 2rem;">
       <div class="container" style="max-width: 800px;line-height: 2.0;">
         <p data-lk="vinyls_central_1" style="color: #F2F2F2;margin: 0;font-style: italic;opacity: 0.9;">
-          À partir d'un support non recyclable, la transformation devient un acte de création. Le vinyle quitte son
-          usage initial pour devenir un objet plastique — une surface, un cercle, un mouvement. Le travail s'organise
+          À partir d’un support non recyclable, la transformation devient un acte de création. Le vinyle quitte son
+          usage initial pour devenir un objet plastique — une surface, un cercle, un mouvement. Le travail s’organise
           autour du rythme, de la rotation et des réactions de la matière.
         </p>
       </div>
@@ -513,6 +512,27 @@
       </div>
     </section>
 
+
+
+
+    <div style="width: 100%;height: 60vh;background: #000;position: relative;overflow: hidden;">
+      <video id="vinyl-video" src="videos/vidSWvinyl2.mp4" autoplay muted loop playsinline
+        style="width:100%;height:100%;object-fit:cover;display:block;"></video>
+      <button id="vinyl-video-btn" class="btn-gallery-minimal" type="button" aria-label="Play/Pause Video"
+        style="position: absolute; bottom: 40px; right: 40px; z-index: 10;">
+        <span class="play-icon-wrap" id="vinyl-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+        </span>
+      </button>
+    </div>
+
+
+
+
+
   </main>
 
   <!-- === PAGE: ARTISTE === -->
@@ -534,10 +554,10 @@
     <section class="artist-editorial-section artist-section-dark">
       <div class="editorial-col">
         <p data-lk="artist_intro_text" class="artist-body italic artist-editorial-text-intro">
-          Artiste contemporaine, Wondavee développe une pratique de l'art fluide. Elle aborde la peinture comme une
+          Artiste contemporaine, Wondavee développe une pratique de l’art fluide. Elle aborde la peinture comme une
           matière vivante, laissant le mouvement, les couches et les réactions guider chaque œuvre.
           <br><br>
-          Il n'y a pas de plan arrêté. Le travail se construit progressivement, par ajustements, jusqu'à trouver son
+          Il n’y a pas de plan arrêté. Le travail se construit progressivement, par ajustements, jusqu’à trouver son
           propre équilibre.
         </p>
       </div>
@@ -558,8 +578,8 @@
           MATIÈRE, LUMIÈRE ET MOUVEMENT</h2>
         <p data-lk="artist_text_1" class="artist-body normal artist-editorial-text-main">
           Née à Paris en 1980, Wondavee grandit au contact des formes visuelles et de la création. Au fil du temps, elle
-          explore le dessin, la couleur, le rythme et la matière, avant que l'art fluide ne s'impose comme un terrain
-          d'expression évident.
+          explore le dessin, la couleur, le rythme et la matière, avant que l’art fluide ne s’impose comme un terrain
+          d’expression évident.
           <br><br>
           Les formes organiques, la lumière et le mouvement occupent une place centrale dans son travail. Courbes,
           superpositions et variations de texture accompagnent une recherche en évolution constante.
@@ -574,8 +594,8 @@
         <h2 data-lk="artist_subtitle_2" class="artist-editorial-title-large" style="color: #fff !important;">
           Démarche</h2>
         <p data-lk="artist_text_2" class="artist-body normal artist-editorial-text-intro">
-          Autodidacte, Wondavee construit son travail à partir de l'expérience et de l'exploration continue. Chaque
-          œuvre naît d'un processus fait d'essais, d'observation et d'ajustements successifs.
+          Autodidacte, Wondavee construit son travail à partir de l’expérience et de l’exploration continue. Chaque
+          œuvre naît d’un processus fait d’essais, d’observation et d’ajustements successifs.
           <br><br>
           La musique influence directement sa manière de travailler, en particulier dans ses créations sur vinyles, où
           la rotation du support joue un rôle essentiel dans le rendu final. Les œuvres sont présentées sans indication,
@@ -603,7 +623,7 @@
         <div class="carousel-item"><img loading="lazy" src="images/artiste-bande-defilante-merak.jpeg" alt="Merak">
         </div>
         <div class="carousel-item"><img loading="lazy" src="images/galerie-disco-33t-6.jpg" alt="Série Disco"></div>
-        <div class="carousel-item"><video src="videos/rotation31-1.mp4.mp4" autoplay muted loop playsinline></video>
+        <div class="carousel-item"><video src="videos/rotation31-1.mp4.mov" autoplay muted loop playsinline></video>
         </div>
         <div class="carousel-item"><img loading="lazy" src="images/ukiyovsw2.jpg" alt="Ukiyo Details"></div>
         <div class="carousel-item"><img loading="lazy" src="images/ukiyo-tableaux.jpg" alt="Ukiyo View"></div>
@@ -616,7 +636,8 @@
         <div class="carousel-item"><img loading="lazy" src="images/artiste-bandeau-bas-2.jpg" alt="Artiste Vue Basse">
         </div>
         <div class="carousel-item"><img loading="lazy" src="images/mock-fusion-1.jpg" alt="Mockup Fusion"></div>
-
+        <div class="carousel-item"><video src="videos/hero-video.mp4" autoplay muted loop playsinline></video>
+        </div>
 
         <!-- Sequence 2 (Loop) -->
         <div class="carousel-item"><img loading="lazy" src="images/vmix.png" alt="Vue Atelier"
@@ -633,7 +654,7 @@
         <div class="carousel-item"><img loading="lazy" src="images/artiste-bande-defilante-merak.jpeg" alt="Merak">
         </div>
         <div class="carousel-item"><img loading="lazy" src="images/galerie-disco-33t-6.jpg" alt="Série Disco"></div>
-        <div class="carousel-item"><video src="videos/rotation31-1.mp4.mp4" autoplay muted loop playsinline></video>
+        <div class="carousel-item"><video src="videos/rotation31-1.mp4.mov" autoplay muted loop playsinline></video>
         </div>
         <div class="carousel-item"><img loading="lazy" src="images/ukiyovsw2.jpg" alt="Ukiyo Details"></div>
         <div class="carousel-item"><img loading="lazy" src="images/ukiyo-tableaux.jpg" alt="Ukiyo View"></div>
@@ -646,7 +667,8 @@
         <div class="carousel-item"><img loading="lazy" src="images/artiste-bandeau-bas-2.jpg" alt="Artiste Vue Basse">
         </div>
         <div class="carousel-item"><img loading="lazy" src="images/mock-fusion-1.jpg" alt="Mockup Fusion"></div>
-
+        <div class="carousel-item"><video src="videos/hero-video.mp4" autoplay muted loop playsinline></video>
+        </div>
       </div>
 
       <!-- Controls Premium -->
@@ -770,10 +792,10 @@
       <div class="contact-grid" style="margin-top:3rem;">
         <!-- Colonne GAUCHE : Formulaire + Photo -->
         <div class="contact-left">
-          <form id="contact-form" name="contact" method="POST" netlify netlify-honeypot="bot-field">
+          <form id="contact-form" method="POST" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="contact">
             <p style="display:none;">
-              <label style="display:none;">Do not fill: <input name="bot-field"></label>
+              <label>Do not fill: <input name="bot-field"></label>
             </p>
             <div class="form-group"><input type="text" name="name" class="form-input" placeholder="Votre Nom"
                 data-lk="contact_name" required>
@@ -794,7 +816,6 @@
             </div>
             <button type="submit" class="btn-outline" data-lk="contact_send"
               style="width: 100%;margin-bottom: 1rem;">Envoyer</button>
-            <input type="hidden" name="form-name" value="contact">
           </form>
 
           <div class="contact-photo">
@@ -815,8 +836,8 @@
               possible de confier un vinyle personnel pour une création sur mesure. Le disque est travaillé comme les
               pièces de la collection, en respectant le support, son format et son histoire.</p>
             <p data-lk="contact_bespoke_text_2" style="color: inherit;">Chaque projet est envisagé
-              individuellement, à partir d'un échange préalable. Le travail repose sur la transformation de la
-              matière, le rythme et l'équilibre, sans reproduction ni standardisation.</p>
+              individuellement, à partir d’un échange préalable. Le travail repose sur la transformation de la
+              matière, le rythme et l’équilibre, sans reproduction ni standardisation.</p>
           </div>
 
           <!-- FAQ -->
@@ -835,7 +856,7 @@
               <p><strong data-lk="contact_faq_q2" style="color: inherit;">Délais de réalisation
                   ?</strong></p>
               <p data-lk="contact_faq_a2" style="color: inherit;">Les délais varient selon le
-                projet et le temps de séchage nécessaire. Ils sont précisés lors de l'échange.</p>
+                projet et le temps de séchage nécessaire. Ils sont précisés lors de l’échange.</p>
             </div>
 
             <div class="faq-item">
@@ -921,7 +942,7 @@
             <li><a href="#" onclick="route('home')" data-lk="nav_home">Accueil</a></li>
             <li><a href="#" onclick="route('tableaux')" data-lk="nav_works">Tableaux</a></li>
             <li><a href="#" onclick="route('vinyles')" data-lk="nav_vinyles">Vinyles</a></li>
-            <li><a href="#" onclick="route('artiste')" data-lk="nav_artist">L'artiste</a></li>
+            <li><a href="#" onclick="route('artiste')" data-lk="nav_artist">L’artiste</a></li>
             <li><a href="#" onclick="route('contact')" data-lk="nav_contact">Contact</a></li>
             <li><a href="https://instagram.com/wondavee.art" target="_blank">Instagram</a></li>
             <li><a href="http://www.tiktok.com/@wondavee" target="_blank">TikTok</a></li>
@@ -929,10 +950,7 @@
         </nav>
 
         <div class="footer-bottom">
-          <p>© 2025 &nbsp;&nbsp; By Wondavee with LOVE<br>
-            Tous droits réservés<br>
-            <a href="#">Mentions légales</a>
-          </p>
+          <p>© 2025 Wondavee — Tous droits réservés · <a href="#">Mentions légales</a></p>
         </div>
       </div>
     </div>
